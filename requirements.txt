@@ -1,4 +1,4 @@
 streamlit
 pypdf
-openai
 scikit-learn
+openai==0.28.1
