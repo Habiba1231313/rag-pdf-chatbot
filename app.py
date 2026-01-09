@@ -23,9 +23,8 @@ if not st.session_state.authed:
     st.stop()
 
 
-openai.api_key = os.getenv("api key")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
-openai.api_key = "api key"
 
 
 def build_prompt(top_chunks, question):
